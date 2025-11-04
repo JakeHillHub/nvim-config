@@ -13,20 +13,10 @@ return {
 
       -- You can also optionally customize the format-on-save behavior here
       -- LazyVim already enables format-on-save by default, but this ensures it.
-      opts.format_on_save = {
-        timeout_ms = 500,
-        lsp_fallback = true,
-      }
-    end,
-  },
-
-  -- **Optional, but highly recommended for managing formatter executables:**
-  -- This ensures Black is installed by Mason if you use it.
-  {
-    "williamboman/mason.nvim",
-    opts = function(_, opts)
-      -- Add 'black' to the list of tools Mason should ensure is installed
-      table.insert(opts.ensure_installed, "black")
+      -- opts.format_on_save = {
+      --   timeout_ms = 500,
+      --   lsp_fallback = true,
+      -- }
     end,
   },
 }

@@ -2,7 +2,5 @@
 require("config.lazy")
 
 vim.keymap.set("i", "lk", "<ESC>")
-vim.opt.timeoutlen = 100
-
 vim.keymap.set("i", "df", "<C-R><C-O>")
 vim.opt.timeoutlen = 100
