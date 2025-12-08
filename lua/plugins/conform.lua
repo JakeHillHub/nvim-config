@@ -1,5 +1,4 @@
 return {
-  -- This is the conform.nvim plugin specification
   {
     "stevearc/conform.nvim",
     -- The `opts` function will be called when conform.nvim is set up.
