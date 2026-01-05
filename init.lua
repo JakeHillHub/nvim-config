@@ -10,7 +10,7 @@ vim.api.nvim_create_autocmd({ "BufEnter", "CursorHold", "CursorHoldI", "FocusGai
   command = "if mode() != 'c' | checktime | endif",
   pattern = { "*" },
 })
-vim.keymap.set("n", "<leader>cc", ":ClaudeCode<CR>", { desc = "Toggle Claude Code" })
+vim.keymap.set("n", "<leader>c'", ":ClaudeCode<CR>", { desc = "Toggle Claude Code" })
 
 if vim.fn.has("wsl") == 1 then
   vim.g.clipboard = {
