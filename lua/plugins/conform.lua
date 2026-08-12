@@ -10,6 +10,14 @@ return {
       -- Add Black as the formatter for python files
       opts.formatters_by_ft["python"] = { "black" }
 
+      opts.formatters_by_ft["vhdl"] = { "vsg" }
+
+      opts.formatters["vsg"] = {
+        command = "vsg",
+        args = { "--fix", "-f", "$FILENAME" },
+        stdin = false,
+      }
+
       -- You can also optionally customize the format-on-save behavior here
       -- LazyVim already enables format-on-save by default, but this ensures it.
       -- opts.format_on_save = {
