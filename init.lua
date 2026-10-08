@@ -1,3 +1,4 @@
+require("config.openc3")
 require("config.lazy")
 
 vim.opt.clipboard = "unnamedplus"
